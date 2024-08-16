@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>TRANSITION TASK</title>
+    </head>
+    <style>
+        div:hover{
+            width: 500px;
+            height: 500px;
+            transform: rotate(180deg);
+        }
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: width 1s height 2s;
+            transition-duration: 3s;  
+            text-align: center; 
+            color: aliceblue;
+        }
+        .div2{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            transition: width 2s, height 2s transform 3s;
+            transition-duration: 3s;
+            border-radius: 50%;
+
+        }
+        .div3{
+            width: 400px;
+            height: 200px;
+            background-color: yellow;
+            transition: width 2s, height 2s transform 3s;
+            transition-duration: 3s;
+        }
+        .div4{
+            
+	width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 300px solid #555;
+    transition: border-left 2s, border-right 2s, border-bottom 3s, transform 4s ;
+    transition-duration: 3;
+        }
+        .div5{
+            border-bottom: 50px solid salmon;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+    transition: transform 3s;
+    transition-duration: 4;
+        }
+    </style>
+    <body>
+        <h1 align=center >SHAPES ROTATE</h1>
+       <center><div class="div1"></div></center> <br><br><br><br>
+       <center> <div class="div2"></div></center><br><br><br><br>   
+        <center><div class="div3"></div></center><br><br><br><br>
+        <center ><div class="div4"></div></center><br><br><br><br>
+        <center><div class="div5"></div></center><br><br><br><br>
